@@ -12,3 +12,27 @@ Al ejecutar la herramienta sobre el código actual (como el archivo `Controlador
 - **Documentación:** Alertas por ausencia de comentarios Javadoc en métodos clave de lógica interna.
 
 *Nota: Todas las incidencias se han visualizado de forma automatizada e interactiva dentro del entorno de desarrollo (IDE) para agilizar las tareas de refactorización y garantizar un desarrollo ágil.*
+
+
+## 3. Pruebas Unitarias (UT4 - JUnit 5)
+Para garantizar la estabilidad de la lógica de negocio del simulador, se han implementado pruebas unitarias automatizadas empleando el framework JUnit 5.
+
+### Cómo ejecutar las pruebas:
+1. En la vista del proyecto de Eclipse, hacer clic derecho sobre la clase `ControladorJuegoTest.java`.
+2. Seleccionar la opción `Run As` ➡️ `JUnit Test`.
+
+### Salida de la ejecución de Tests (Resultado):
+- **Tests run:** 2/2 (100% exitosos)
+- **Errors:** 0
+- **Failures:** 0
+- **Resultado Visual:** Barra de estado en verde (Green Bar), lo que certifica la correcta ejecución del flujo lógico verificado sin excepciones.
+
+## 4. Reporte de Calidad de Código (CheckStyle)
+### Cómo ejecutar CheckStyle:
+1. Clic derecho sobre el proyecto raíz `FutbolProyect`.
+2. Seleccionar `Checkstyle` ➡️ `Check Code with Checkstyle`.
+
+### Salida de la herramienta:
+El linter resalta interactivamente en el editor de código las líneas afectadas mediante marcadores amarillos. Los fallos principales detectados incluyen:
+- Ausencia de bloques de comentarios Javadoc estandarizados en métodos internos.
+- Ubicación incorrecta de llaves de apertura `{` según las convenciones Java de Sun.

@@ -36,3 +36,30 @@ Para garantizar la estabilidad de la lógica de negocio del simulador, se han im
 El linter resalta interactivamente en el editor de código las líneas afectadas mediante marcadores amarillos. Los fallos principales detectados incluyen:
 - Ausencia de bloques de comentarios Javadoc estandarizados en métodos internos.
 - Ubicación incorrecta de llaves de apertura `{` según las convenciones Java de Sun.
+
+## 🛠️ Instrucciones de Ejecución por Terminal (UT4)
+
+### Cómo ejecutar los Tests Unitarios:
+Para lanzar las pruebas unitarias automatizadas con JUnit desde la consola, colócate en la raíz del proyecto y ejecuta:
+```bash
+mvn test
+
+
+## 🛠️ Pruebas Unitarias y Calidad de Código (UT4)
+
+### Comando teórico de ejecución de Tests:
+`mvn test`
+
+#### Resultado obtenido (Salida de JUnit en Eclipse):
+```text
+[Haz clic abajo en la pestaña 'Console' de Eclipse después de hacer Run As -> JUnit Test, copia todo ese texto y pégalo aquí]
+		
+Description	Resource	Path	Location	Type
+Plugin execution not covered by lifecycle configuration: org.apache.maven.plugins:maven-checkstyle-plugin:3.3.1:check (execution: validate, phase: validate)	pom.xml	/FutbolProyect	line 56	Maven Project Build Lifecycle Mapping Problem
+
+Description	Resource	Path	Location	Type
+',' no está seguido de espacio en blanco.	PanelVictoria.java	/FutbolProyect/src/vista	line 361	Checkstyle Problem
+
+Aqui vemos los errores, que hay y avisos con el checkstyle.
+
+

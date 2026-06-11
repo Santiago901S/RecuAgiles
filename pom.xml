@@ -3,19 +3,38 @@
   <groupId>FutbolProyect</groupId>
   <artifactId>FutbolProyect</artifactId>
   <version>0.0.1-SNAPSHOT</version>
-  
+
+  <properties>
+    <maven.compiler.target>22</maven.compiler.target>
+    <maven.compiler.source>22</maven.compiler.source>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+  </properties>
+
+  <dependencies>
+    <dependency>
+      <groupId>org.junit.jupiter</groupId>
+      <artifactId>junit-jupiter-api</artifactId>
+      <version>5.10.2</version>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.junit.jupiter</groupId>
+      <artifactId>junit-jupiter-engine</artifactId>
+      <version>5.10.2</version>
+      <scope>test</scope>
+    </dependency>
+  </dependencies>
+
   <build>
-    <sourceDirectory>src</sourceDirectory>
     <resources>
       <resource>
-        <directory>src</directory>
-        <excludes>
-          <exclude>**/*.java</exclude>
-        </excludes>
+        <directory>src/main/resources</directory>
       </resource>
     </resources>
+    
     <plugins>
       <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-compiler-plugin</artifactId>
         <version>3.13.0</version>
         <configuration>
